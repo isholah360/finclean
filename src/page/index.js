@@ -1,0 +1,7 @@
+export {default as Home} from './home/home'
+export {default as About} from './about/about'
+export {default as Service} from './service/service'
+export {default as Reg} from './reg/reg'
+export {default as Partner} from './partner/partner'
+export {default as Login} from './login/login'
+export {default as Contact} from './contact/contact'

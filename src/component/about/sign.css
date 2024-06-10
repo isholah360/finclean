@@ -1,0 +1,23 @@
+.sign-sect{
+    padding: 5rem 5%;
+}
+.req-button-sign{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.sign-up{
+    padding-left: 4rem;
+}
+.req-button-sign button{
+    background-color: rgb(20, 20, 20);
+    padding: .8rem 1.5rem;
+    border-radius: 10px;
+    color: #fff;
+}
+@media screen and (max-width:768px) {
+    .sign-up{
+        padding-left: 0;
+    }
+}

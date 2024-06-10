@@ -1,0 +1,263 @@
+.main-nav{
+    z-index: 300;  
+    display: absolute;
+    top: 0;
+}
+
+.nav {
+  height: 12vh;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+  padding: .5rem 5%;
+  width: auto;
+  z-index: 120;
+}
+.nav .mylogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; 
+}
+.nav ul {
+  margin: 0 15rem 0 0;
+  display: none;
+}
+.mylogo img{
+  width: 3.6rem;
+}
+.mylogo ul{
+  columns: #fff;
+  display: flex;
+  align-items: center;
+  
+}
+.mylogo ul li{
+  padding: .3rem 1rem;
+}
+.nav .listz {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    min-width: 27rem;
+    font-size: 1em;
+  }
+  .nav .listzin {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    margin-right: -13rem;
+    font-size: .85em;
+
+  }
+  .listzin ul .sign-up-but:hover{
+    background: rgba(104, 103, 103, 0.555);
+   color: #fff;
+  }
+  .listzin ul li{
+    padding: .5rem .7rem;
+  }
+  .listzin ul li:hover{
+    background: rgba(104, 103, 103, 0.555);
+    border-radius: 20px;
+  }
+.mylogo li:hover{
+  background: rgba(104, 103, 103, 0.555);
+  border-radius: 20px;
+}
+
+.sign-up-but{
+  background-color: lightgrey;
+  padding: .5rem .8rem;
+  margin: 0 .5rem;
+  border-radius: 20px;
+  color: #000000;
+}
+.listzin ul{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+  .nav .listz hr {
+  display: none;
+  }
+  .nav .listz a{
+   text-decoration: none;
+   color: lightgray;
+    }
+.nav ul .lists {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ width: 20rem;
+
+}
+
+.move ul .lists li {
+  list-style: none;
+  margin: 0 .9rem;
+  font-family: poppins;
+  text-decoration: none;
+  padding: 0 0 0 .8rem;
+}
+.lists li a{
+    text-decoration: none;
+    color: lightgray;
+}
+.nav ul .lists hr{
+   display: none;
+ }
+.farbar {
+    width: 35px;
+    display: none;
+}
+.farbar div{
+    border-style: none;
+    border-width: 2px;
+    border-color: white;
+    width: 100%;
+    margin: 5px 20px;
+    background-color: white;
+    height: 5px;
+   
+}
+.full{
+  display: none;
+}
+@media screen and (max-width:460px) {
+  .main-nav{
+    z-index: 500;  
+    top: 0;
+}
+    .nav{
+      overflow-x: hidden;
+      justify-content: space-between;
+      background-color: #000000;
+      max-width:460px;
+      z-index: -1;
+      top: 0;
+    }
+    .nav ul {
+        margin: 0 0rem 0 0;
+        overflow-x: hidden;
+       
+      }
+    .nav .ul{
+        display: flex;
+        flex-direction: column; 
+        position: absolute;
+        background-color: rgb(32,32,32);
+        width: 70vw;
+        height: 100vh;
+        right: 0rem;
+        top: -5rem;
+        display: none;
+        justify-content: center;
+        z-index: 1; 
+    
+    }
+    .nav .uls{
+        display: flex;
+        flex-direction: column;   
+        position: absolute;
+        background-color: rgb(32,32,32);
+        width: 70vw;
+        height: 100vh;
+        right: 0rem;
+        top: 0rem;
+        display: none;
+        justify-content: center;
+
+    }
+    ul .lists{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        position: relative;
+        justify-content: center;
+        align-items: flex-start;
+        text-decoration: none;
+        background-color: rgb(32,32,32);
+    }
+
+    ul .lists hr{
+       min-width: 100%;
+       display: block;
+       font-weight: 50;
+       margin: .4rem 0;
+       height: .5px;
+       border-style: none;
+       background-color: rgb(148, 147, 147);
+    }
+    .nav .mylogo{
+        margin: 0 0 0 3rem;
+        color: rgb(32,32,32);;
+    }
+    .nav .farbar{
+        display: block;
+        position:absolute;
+        right: 5rem;
+        z-index:100;
+        border-bottom: rgb(32,32,32);
+    }
+    .lists li a{
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .nav .listz {
+     display: none;
+    }
+    .move{
+      position:absolute;
+      right: 0;
+      position: fixed;
+      z-index: 500;
+    }
+    .move ul{
+        display: flex;
+        flex-direction: column; 
+        width: 70vw;
+        height: 100vh;
+        right: 0;
+        top: -4rem;
+        z-index: 2000;
+        display: none;
+        position: relative;
+        justify-content: center;
+        align-items: flex-start;
+        text-decoration: none;
+        background-color: rgb(32,32,32);
+      }
+      .move .close{
+      position: absolute;
+      z-index: 1000;
+      right: 2rem;
+      top: 2rem;
+      font-size: 1rem;
+      color: white;
+      border-style: solid;
+      border-radius: 50%;
+      height: 2rem;
+      width: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      }
+      .mylogo{
+        width: 5rem;
+      }
+      .listzin li{
+        display: none;
+      }
+      .nav .listz {
+        min-width: 50%;
+      }
+}

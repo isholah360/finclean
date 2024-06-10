@@ -1,0 +1,54 @@
+.hero-com{
+    display: grid;
+    padding: 3rem 5%;
+    min-height: dvh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: auto;
+    overflow-x: hidden;
+}
+.hero-img{
+    width: clamp(90%, 40vw + 1rem, 100%)
+}
+.hero-img img{
+    width: 100%
+}
+.hero-tet .req-button{
+    padding: .7rem 1.5rem;
+}
+.hero-tet{
+    width: clamp(50%, 35vw, 100%);
+    padding: 20% 0;
+}
+.hero-tet h1{
+    font-weight: bolder;
+    font-size: clamp(.5rem, 15vw + 1rem, 2.6rem);
+
+}
+.hero-tet .request{
+    padding: 1.5rem 0;
+}
+.hero-tet button{
+    background-color: lightgray;
+    padding: .8rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+@media screen and (max-width:768px) {
+    .hero-tet{
+        width: clamp(100%, 35vw, 100%);
+        padding: 20% 0;
+    }
+    .hero-tet h1{
+        font-weight: bolder;
+        font-size: clamp(1rem, 7vw + 1rem, 1.75rem);
+    
+    }
+    .hero-img{
+        width: clamp( 85vw, 40vw + 1rem, 100%)
+    }
+    .hero-tet{
+        width: clamp(80%, 85vw, 100%);
+        padding: 20% 0;
+    }
+}
